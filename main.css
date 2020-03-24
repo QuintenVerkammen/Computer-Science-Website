@@ -1,0 +1,113 @@
+.wrapper {
+    display: grid;
+    grid-templates-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 500px 70px;
+    grid-template-areas:
+    "header header header"
+    "body body body"
+    "footer footer footer";
+    background-image: url("images/background.png");
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    font-family: "Chalkboard SE";
+    margin-bottom: 20px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.title {
+    background-color: #7FBCE1;
+    border-color: #FB291F;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 6px;
+}
+
+.nav {
+    background-color: #D2D9EC;
+    font-size: 20px;
+    margin-top: 20px;
+    float: left;
+    padding-right: 100px;
+    border-left-color: #FB291F;
+    border-bottom-color: #D2D9EC;
+    border-right-color: #D2D9EC;
+    border-top-color: #D2D9EC;
+    border-left-width: 5px;
+    border-style: solid;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+
+.nav li {
+    display: inline;
+    float: left;
+    background-color: #D2D9EC;
+}
+
+.nav li a {
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: #B3BFDD;
+}
+
+.nav a {
+    padding: 8px;
+    color: black;
+    text-decoration: none
+}
+
+.body {
+    grid-area: body;
+    font-family: "Chalkboard SE";
+    background-color: #efefef;
+    border-style: solid;
+    border-color: #c3c3c3;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 280px;
+    margin-left: 280px;
+    padding-right: 25px;
+    padding-left: 25px;
+    box-shadow: 3px 3px 3px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #a3a7b3;
+    margin-top: 20px;
+    font-size: 15px
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer li {
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px
+}
+
+.footer a {
+    color: #EFF3FF;
+}
+
+img {
+    float: right
+}
